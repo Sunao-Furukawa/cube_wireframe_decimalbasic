@@ -1,0 +1,8 @@
+# GitHub の言語判定(Linguist)の上書き設定
+#
+# 十進BASIC(Decimal BASIC)は Full BASIC 規格の実装ですが、
+# .BAS という拡張子は既定で QuickBASIC と誤判定されます。
+# Linguist には「十進BASIC」という言語項目が無いため、
+# 規格上もっとも近い汎用の "BASIC" として表示させます。
+*.BAS linguist-language=BASIC
+*.bas linguist-language=BASIC
